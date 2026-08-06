@@ -1,0 +1,20 @@
+{
+  "appUrl": "http://localhost:5173",
+  "loginUrl": "http://localhost:5173/login",
+  "startCommand": "npm run dev",
+  "auth": {
+    "required": false,
+    "username": "",
+    "passwordSource": "ask-user",
+    "otpRequired": false,
+    "notes": "Do not store passwords, tokens or OTP values in this file."
+  },
+  "verification": {
+    "defaultViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "failOnConsoleError": true,
+    "failOnFailedNetworkRequest": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "gigacode-frontend-orchestrator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Self-contained GigaCode frontend-orchestrator runtime.",
+  "scripts": {
+    "validate": "node scripts/validate-runtime.js",
+    "doctor": "node scripts/validate-runtime.js doctor",
+    "test": "node scripts/validate-runtime.js"
+  }
+}

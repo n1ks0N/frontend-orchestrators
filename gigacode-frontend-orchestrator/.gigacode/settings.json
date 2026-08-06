@@ -1,0 +1,16 @@
+{
+  "$version": 3,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Shell|run_shell_command|Read|read_file|Edit|edit|Write|write_file|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .gigacode/hooks/frontend-orchestrator-guard.js"
+          }
+        ]
+      }
+    ]
+  }
+}

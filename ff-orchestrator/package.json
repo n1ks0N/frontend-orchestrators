@@ -1,0 +1,11 @@
+{
+  "name": "ff-orchestrator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Minimal GigaCode frontend feature flow orchestrator for SDD/OpenSpec driven work.",
+  "scripts": {
+    "validate": "node scripts/validate-runtime.js",
+    "doctor": "node scripts/validate-runtime.js doctor",
+    "test": "node scripts/validate-runtime.js"
+  }
+}

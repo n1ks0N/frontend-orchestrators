@@ -1,0 +1,33 @@
+{
+  "$schema": "gigacode-mcp-settings-example",
+  "mcpServers": {
+    "atlassian": {
+      "command": "/path/to/python3",
+      "args": [
+        "/path/to/mcp-atlassian-with-bitbucket",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "JIRA_URL": "https://jira.example.com",
+        "JIRA_USERNAME": "user@example.com",
+        "JIRA_PERSONAL_TOKEN": "$secret:atlassian/JIRA_PERSONAL_TOKEN",
+        "JIRA_SSL_VERIFY": false,
+        "CONFLUENCE_URL": "https://confluence.example.com",
+        "CONFLUENCE_USERNAME": "user@example.com",
+        "CONFLUENCE_PERSONAL_TOKEN": "$secret:atlassian/CONFLUENCE_PERSONAL_TOKEN",
+        "CONFLUENCE_SSL_VERIFY": false,
+        "BITBUCKET_URL": "https://stash.example.com",
+        "BITBUCKET_USERNAME": "user@example.com",
+        "BITBUCKET_PERSONAL_TOKEN": "$secret:atlassian/BITBUCKET_PERSONAL_TOKEN",
+        "BITBUCKET_SSL_VERIFY": false
+      }
+    },
+    "code-index": {
+      "command": "/path/to/python",
+      "args": [
+        "/path/to/code-index-mcp"
+      ]
+    }
+  }
+}

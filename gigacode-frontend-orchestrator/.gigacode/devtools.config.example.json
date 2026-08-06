@@ -1,0 +1,29 @@
+{
+  "$schema": "gigacode-devtools-config.v1",
+  "localApp": {
+    "startCommand": "npm run dev",
+    "url": "http://localhost:5173",
+    "readyCheck": "http://localhost:5173"
+  },
+  "auth": {
+    "required": false,
+    "loginUrl": "http://localhost:5173/login",
+    "username": "",
+    "passwordSource": "ask-user",
+    "steps": [
+      "Open loginUrl.",
+      "Fill username from this config if present.",
+      "Ask the main orchestrator for password or one-time code if needed.",
+      "Submit the form and verify that the target route is reachable."
+    ]
+  },
+  "verification": {
+    "captureConsole": true,
+    "captureNetworkErrors": true,
+    "captureScreenshots": false,
+    "allowedHosts": [
+      "localhost",
+      "127.0.0.1"
+    ]
+  }
+}
